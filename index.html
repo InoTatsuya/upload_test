@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>jsアップロード</title>
+    <script type="text/javascript" src="test.js"></script>
+    <style>
+        #section-1 {
+            background-color: #C8E6C9;
+        }
+        #section-2 {
+            background-color: #FFF9C4;
+        }
+    </style>
+</head>
+<body>
+        <input type="button" value="Check" onclick="myfunc()">
+        <script>
+
+        </script>
+    <section id="section">
+        <p>子ノード</p>
+        <p>子ノード</p>
+        <p>子ノード</p>
+    </section>
+<section id="section-1">
+    <h2>セクション1</h2>
+    <p>子ノード1</p>
+    <p>子ノード2</p>
+    <p>子ノード3</p>
+</section>
+<section id="section-2">
+    <h2>セクション2</h2>
+    <p>子ノード1</p>
+    <p>子ノード2</p>
+    <p>子ノード3</p>
+</section>
+<script>
+    
+var myfunc = function () {
+    console.log("Hello world!");
+    console.log(val);
+    val.style.color = "red";
+}
+var val = document.getElementById('section-1');
+/*
+val.style.color = "red";
+console.log(val); // section-1
+console.log(val.childNodes); // section-1の子ノードリスト
+val.childNodes[5].innerHTML = "子ノード1！！！" ;
+console.log(val.parentNode) // section-2の親ノード
+val.parentNode.removeChild(val);
+*/
+
+</script>
+</body>
+</html>
